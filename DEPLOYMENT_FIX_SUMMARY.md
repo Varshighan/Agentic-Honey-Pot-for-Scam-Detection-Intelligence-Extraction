@@ -20,12 +20,20 @@ Your Render deployment also lacked a proper WSGI configuration, which could caus
 ## 📦 What Was Added
 
 1. **`wsgi.py`** - Production WSGI entry point for your Flask app
-2. **`gunicorn`** - Added to requirements.txt for production server
+2. **`gunicorn 22.0.0`** - Added to requirements.txt for production server (patched version with security fixes)
 3. **`.gitignore`** - To prevent committing cache files
 4. **Documentation**:
    - `RENDER_DEPLOYMENT.md` - Complete deployment guide
    - `QUICK_FIX.md` - Immediate fix instructions
 5. **Tests** - 13 automated tests to validate deployment configuration
+
+## 🔒 Security Updates
+
+**Gunicorn upgraded to 22.0.0** to address critical vulnerabilities:
+- ✅ Fixed: HTTP Request/Response Smuggling vulnerability (CVE)
+- ✅ Fixed: Request smuggling leading to endpoint restriction bypass
+- Previous version: 21.2.0 (vulnerable)
+- Current version: 22.0.0 (patched)
 
 ## 🚀 How to Deploy to Render
 
