@@ -41,6 +41,7 @@ python integration_test.py
 ## 📖 Documentation
 
 - **[INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)** - Complete API documentation, architecture, and usage
+- **[RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md)** - Production deployment guide for Render
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick reference for scam detector module
 - **[DELIVERABLE_STATUS.md](DELIVERABLE_STATUS.md)** - Implementation status
 

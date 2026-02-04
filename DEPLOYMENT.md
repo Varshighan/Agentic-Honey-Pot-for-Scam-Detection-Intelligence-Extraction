@@ -30,9 +30,11 @@ python app.py
 
 ### Production (using gunicorn)
 ```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
+pip install -r requirements.txt
+gunicorn -w 4 -b 0.0.0.0:5000 wsgi:app --timeout 120
 ```
+
+**Note**: For cloud deployment (Render, Heroku, etc.), see **[RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md)** for detailed instructions.
 
 ### Using startup scripts
 ```bash
