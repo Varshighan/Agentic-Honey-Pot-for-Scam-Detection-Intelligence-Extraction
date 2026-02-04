@@ -35,9 +35,10 @@ Set the following environment variables in Render:
 |----------|-------|-------------|
 | `PORT` | (auto-set by Render) | Port number for the server |
 | `API_KEYS` | `your-secure-key-1,your-secure-key-2` | Comma-separated list of valid API keys |
-| `PYTHON_VERSION` | `3.11.0` | Python version to use |
 
 **Important**: Replace the default API keys with secure, random keys for production!
+
+**Note**: Render automatically detects the Python version from your code. If you need a specific version, create a `runtime.txt` file with content like `python-3.11.0`.
 
 ### 4. Deploy
 
